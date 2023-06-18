@@ -10,7 +10,7 @@ int main(void)
 	char x = 'a';
 	int i;
 
-	for (i = 0 ; i < 26 ; i++)
+	for (i = 0 ; i < 24 ; i++)
 	{
 		if (x == 'q' || x == 'e')
 		x++;
