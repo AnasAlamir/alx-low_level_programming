@@ -3,12 +3,17 @@
 /**
  * print_alphabet_x10 - to prints10 the alphabet in lowercase followed by a new line.
  */
-void print_alphabet(void)
+void print_alphabet_x10(void)
 {
 	int j;
+	char i;
 
 	for (j = 0; j < 10; j++)
 	{
-	print_alphabet(void);
+		for (i = 'a'; i <= 'z'; i++)
+			{
+				_putchar(i);
+			}
+		 _putchar('\n');
 	}
 }
