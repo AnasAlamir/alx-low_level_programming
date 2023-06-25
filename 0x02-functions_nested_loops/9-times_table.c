@@ -24,7 +24,7 @@ void times_table(void)
 				_putchar(' ');
 				break;
 			}
-			if (pro > 9)
+			if (pro >= 9)
 			{
 				_putchar(',');
 				_putchar(' ');
