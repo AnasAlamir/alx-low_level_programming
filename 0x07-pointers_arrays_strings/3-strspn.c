@@ -11,13 +11,23 @@
  */
 unsigned int _strspn(char *s, char *accept)
 {
-	int i;
+	int i, j, c = 0, cnt = 0;
 
 	for (i = 0; s[i]; i++)
-		if (s[i] == accept[0])
+	{
+		c = 0;
+		for (j = 0; accept[j]; j++)
 		{
-			i++;
-			return (i);
+			if (accept[j] == s[i])
+			{
+				c = 1;
+				break;
+			}
 		}
-	return (i);
+		if (c)
+			cnt++;
+		else
+			break;
+	}
+	return (cnt);
 }
