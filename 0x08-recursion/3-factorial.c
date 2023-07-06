@@ -5,7 +5,7 @@
  *
  * @n: input
  *
- * Return: (factorial(n - 2) + factorial(n - 1))
+ * Return: (n + factorial(n - 1))
  */
 int factorial(int n)
 {
