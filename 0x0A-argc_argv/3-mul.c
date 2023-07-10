@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
  * main - entery
@@ -14,13 +15,13 @@ int main(int argc, char *argv[])
 	int r;
 	if (argc == 3)
 	{
-		r =(argv[1] - '0') * (argv[2] - '0');
+		r =atoi(argv[1]) * atoi(argv[2]);
 		printf("%d\n", r);
 		return (0);
 	}
 	else
 	{
-		 printf("Error");
+		 printf("Error\n");
 		 return (1);
 	}
 }
