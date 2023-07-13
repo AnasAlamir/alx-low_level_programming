@@ -21,10 +21,10 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		;
 	for (j = 0; s2[j]; j++)
 		;
-	if (i == 0)
-		*s1 = '\0';
-	if (j == 0)
-		*s2 = '\0';
+	if (s1 == NULL)
+		s1 = "";
+	if (s2 == NULL)
+		s2 = "";
 	if ((int)n >= j)
 		n = j;
 	p = malloc(i + n + 1);
