@@ -8,6 +8,7 @@
  * @s2: input
  *
  * @n: input
+ *
  * Return: NULL if size = 0
  *		otherwise a pointer to the array, or NULL if it fails
  */
@@ -25,17 +26,13 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (j == 0)
 		*s2 = '\0';
 	if ((int)n >= j)
-		p = malloc(i + j + 1);
-	else
-	{
-		p = malloc(i + n + 1);
-		j = n;
-	}
+		n = j;
+	p = malloc(i + n + 1);
 	if (p == NULL)
 		return (NULL);
 	for (x = 0; x < i; x++)
 		p[x] = s1[x];
-	for (z = 0; z < j; z++, x++)
+	for (z = 0; z < (int)n; z++, x++)
 		p[x] = s2[z];
 	p[x] = '\0';
 	return (p);
