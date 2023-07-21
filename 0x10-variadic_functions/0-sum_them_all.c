@@ -5,6 +5,8 @@
  *
  * @n: input
  *
+ * @...: ints to sum
+ *
  * Retuen: sum
  */
 int sum_them_all(const unsigned int n, ...)
