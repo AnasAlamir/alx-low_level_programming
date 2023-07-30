@@ -20,6 +20,6 @@ size_t print_list(const list_t *h)
 		ie++;
 		h = h->next;
 	}
-	printf("-> %lu elements", ie);
+	printf("-> %lu elements\n", ie);
 	return (ie);
 }
