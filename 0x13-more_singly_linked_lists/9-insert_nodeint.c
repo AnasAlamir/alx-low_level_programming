@@ -25,7 +25,7 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 		i++;
 	}
 	if (!ind)
-		retuen (NULL);
+		return (NULL);
 	new->next = ind->next;
 	ind->next = new;
 	new->n = n;
