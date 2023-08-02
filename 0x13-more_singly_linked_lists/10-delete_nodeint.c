@@ -31,7 +31,7 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 	}
 	if (!ind || !ind->next)
 		return (-1);
-	cur = ind;
+	cur = ind->next;
 	ind->next = cur->next;
 	free(cur);
 	return (1);
